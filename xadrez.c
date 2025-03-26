@@ -27,6 +27,20 @@ do
     printf("Esquerda.\n");
     rainha++;
 } while (rainha <= 8);
+
+    printf("\nMovimento do Cavalo.\n");
+
+    int movimentos = 1; // Define a quantidade de vezes que o movimento completo será executado
+
+    while (movimentos > 0) // Loop externo garante a execução da sequência do Cavalo
+    {
+        for(int i = 0; i < 2; i++) { // Loop interno para mover duas casas para baixo
+            printf("Baixo.\n");
+        }
+        printf("Esquerda.\n"); // Movimento final do Cavalo para a esquerda
+
+        movimentos--; // Decrementa o contador para encerrar o loop
+    }
    
 
 
